@@ -40,9 +40,9 @@ class IceCreamStand(Restaurant):
     def find_flavor_in_types(self, flavor):
         flavor = flavor.lower()
         for ice_type, flavors in self.taste.items():
-            if flavor in flavors:
+            if flavor in (f.lower() for f in flavors):  # Проверяем наличие вкуса в списке
                 return f"Мороженое '{flavor}' есть в '{ice_type}'."
-        return "Ошибка. Мороженое не найдено"
+        return "Ошибка. Мороженое не найдено."
 
     def add_new_type(self, ice_type):
         if ice_type in self.taste:
