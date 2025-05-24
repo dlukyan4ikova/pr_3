@@ -1,43 +1,43 @@
-def z1():
+def zad1():
     r = int(input("Введите радиус "))
     pi = 3.14159
     s = pi * r * r
     print("Площадь равна: ", s)
 
-def z2():
+def zad2():
     a = int(input('Введите "a" '))
     b = int(input('Введите "b" '))
     x = -b/a
     print("X равен: ", x)
 
-def z3():
+def zad3():
     c = int(input("Введите температуру по цельсию "))
     f = 95 * c + 32
     print("Температура по Фаренгейту ", f)
 
-def z4():
+def zad4():
     a = int(input("Введите первое число "))
     b = int(input("Введите второе число "))
     c = int(input("Введите третье число "))
     cr = (a + b + c) / 3
     print("Среднее арифметическое ", cr)
 
-def z5():
+def zad5():
     a = 5 + 2 * 3 - 4 // 2
     b = (3 + 5) * (2 + 4) // 2
     c = -3 + 6 // 2 * 4
     d = 5 + 4 * 5 ** 2 + 7
     print(a, b, c, d)
 
-z = int(input('Введите номер задания..'))
-if z == 1:
-    z1()
-if z == 2:
-    z2()
-if z == 3:
-    z3()
-if z == 4:
-    z4()
-if z == 5:
-    z5()
+e = int(input('Введите номер задания..'))
+if e == 1:
+    zad1()
+if e == 2:
+    zad2()
+if e == 3:
+    zad3()
+if e == 4:
+    zad4()
+if e == 5:
+    zad5()
 
