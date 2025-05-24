@@ -51,7 +51,6 @@ class IceCreamStand(Restaurant):
             self.taste[ice_type] = []
             return "Добавлено новое мороженое"
 
-
 stand = IceCreamStand("Cute Kitty Ice","Южный парк", "8:00-20:00")
 root = tk.Tk()
 root.title("Cute Kitty Ice")
